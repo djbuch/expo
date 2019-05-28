@@ -397,6 +397,8 @@ PODS:
     - UMFileSystemInterface
     - UMImageLoaderInterface
     - UMPermissionsInterface
+  - EXCamera2 (0.1.0):
+    - UMCore
   - EXConstants (5.0.0-rc.0):
     - UMConstantsInterface
     - UMCore
@@ -445,7 +447,7 @@ PODS:
   - EXImagePicker (5.0.0-rc.1):
     - UMCore
     - UMFileSystemInterface
-  - EXKeepAwake (5.0.0-rc.0):
+  - EXKeepAwake (5.0.0-rc.1):
     - UMCore
   - EXLinearGradient (5.0.0-rc.0):
     - UMCore
@@ -1111,6 +1113,7 @@ DEPENDENCIES:
   - EXBrightness (from `../packages/expo-brightness/ios`)
   - EXCalendar (from `../packages/expo-calendar/ios`)
   - EXCamera (from `../packages/expo-camera/ios`)
+  - EXCamera2 (from `../packages/expo-camera2/ios`)
   - EXConstants (from `../packages/expo-constants/ios`)
   - EXContacts (from `../packages/expo-contacts/ios`)
   - EXCrypto (from `../packages/expo-crypto/ios`)
@@ -1543,6 +1546,9 @@ EXTERNAL SOURCES:
   EXCamera:
     :path: !ruby/object:Pathname
     path: "../packages/expo-camera/ios"
+  EXCamera2:
+    :path: !ruby/object:Pathname
+    path: "../packages/expo-camera2/ios"
   EXConstants:
     :path: !ruby/object:Pathname
     path: "../packages/expo-constants/ios"
@@ -1846,6 +1852,7 @@ SPEC CHECKSUMS:
   EXBrightness: 053cf76c5334219454f5bfb95e3ecb0d5c6c3822
   EXCalendar: 89ba792443532ae40d00b26f2e0580aa27f61ccb
   EXCamera: a3f7911a88c01af49f7b72896b86f2149819b370
+  EXCamera2: eca47e7cc4d88c20c26d18ebd8e0321da9d6ba94
   EXConstants: 5b1120c05147563d46ad3ffb5580d05fba72c52e
   EXContacts: e0b3af29dcd0f80e9b6e3344efc5716248af8866
   EXCrypto: c94315abf3e2d5869fb8d1818aeffde5941e1e07
@@ -1860,7 +1867,7 @@ SPEC CHECKSUMS:
   EXHaptics: e2111193dd4365199f452c1647083f05c558b6b2
   EXImageManipulator: e9fa08765ed4bd28ebcb5583d485fbd21dfb58b7
   EXImagePicker: 5d630b700ee1621ef9cb3627cfa82bd232f8456b
-  EXKeepAwake: a8ff927e2336a015f38e50bd0e5cc080b27630dd
+  EXKeepAwake: 760f66cc13a065ae5420337e776320b6926aa185
   EXLinearGradient: 04e9ad673ed22da36b525288e35dd8abdc80be67
   EXLocalAuthentication: 7297dd3ab7863006244b224257d2c80f4fdfe0df
   EXLocalization: d32ed8407f260f49e65bbdbdcbc86d2770fb3e5b
@@ -1920,6 +1927,6 @@ SPEC CHECKSUMS:
   yogaABI32_0_0: c1f9c3bc06b5adcc1285e151589f88fc13cf9ef9
   yogaABI33_0_0: aec4e4cfccfd36f11487aa0f2c678fe58ebf77bc
 
-PODFILE CHECKSUM: 001d3b496dd75743cc674a72b3a379a7be5270ca
+PODFILE CHECKSUM: 358169f20a3a30d9ecf4786b4504d8c73f17ac33
 
 COCOAPODS: 1.6.2
