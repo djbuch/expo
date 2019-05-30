@@ -28,10 +28,9 @@ import org.unimodules.core.ModuleRegistry;
 import org.unimodules.core.Promise;
 import org.unimodules.core.arguments.ReadableArguments;
 import org.unimodules.core.interfaces.ExpoMethod;
-import org.unimodules.core.interfaces.ModuleRegistryConsumer;
 import org.unimodules.interfaces.permissions.Permissions;
 
-public class CalendarModule extends ExportedModule implements ModuleRegistryConsumer {
+public class CalendarModule extends ExportedModule {
   private static final String TAG = CalendarModule.class.getSimpleName();
 
   private Context mContext;
@@ -48,7 +47,7 @@ public class CalendarModule extends ExportedModule implements ModuleRegistryCons
   }
 
   @Override
-  public void setModuleRegistry(ModuleRegistry moduleRegistry) {
+  public void onCreate(ModuleRegistry moduleRegistry) {
     mPermissionsModule = moduleRegistry.getModule(Permissions.class);
   }
 
